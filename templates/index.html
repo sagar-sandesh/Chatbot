@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Chatbot</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    #chatbox { border: 1px solid #ccc; padding: 1rem; height: 300px; overflow-y: scroll; }
+    .user { color: blue; }
+    .bot { color: green; }
+  </style>
+</head>
+<body>
+  <h1>Chatbot</h1>
+  <div id="chatbox"></div>
+  <input type="text" id="input" placeholder="Say something..." autocomplete="off" />
+  <button id="send">Send</button>
+
+<script>
+const chatbox = document.getElementById("chatbox");
+const input = document.getElementById("input");
+const send = document.getElementById("send");
+
+function appendMessage(sender, msg) {
+  const div = document.createElement("div");
+  div.className = sender;
+  div.textContent = `${sender}: ${msg}`;
+  chatbox.appendChild(div);
+  chatbox.scrollTop = chatbox.scrollHeight;
+}
+
+// Speech Recognition (voice input)
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+const recognition = new SpeechRecognition();
+
+recognition.onresult = function(event) {
+  const transcript = event.results[0][0].transcript;
+  input.value = transcript;
+  send.click();
+};
+
+function startListening() {
+  recognition.start();
+}
+
+send.onclick = () => {
+  const msg = input.value.trim();
+  if (!msg) return;
+  appendMessage("user", msg);
+  input.value = "";
+
+  fetch("/get", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ msg })
+  })
+  .then(res => res.json())
+  .then(data => {
+    appendMessage("bot", data.response);
+    // Speech synthesis (voice output)
+    const utterance = new SpeechSynthesisUtterance(data.response);
+    speechSynthesis.speak(utterance);
+  })
+  .catch(() => appendMessage("bot", "Sorry, an error occurred."));
+};
+
+input.addEventListener("keyup", (e) => {
+  if (e.key === "Enter") send.click();
+});
+</script>
+
+</body>
+</html>
