@@ -1,6 +1,4 @@
 from flask import Flask, render_template, request, jsonify
-import nltk
-from nltk.tokenize import word_tokenize
 
 app = Flask(__name__)
 
