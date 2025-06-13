@@ -1,0 +1,8 @@
+
+flask
+nltk
+scikit-learn
+numpy
+pyttsx3
+speechrecognition
+pyaudio
