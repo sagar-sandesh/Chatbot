@@ -1,5 +1,4 @@
 import random
-import json
 import pickle
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
@@ -17,8 +16,8 @@ def preprocess_text(text):
 
 def predict_class(text):
     processed = preprocess_text(text)
-    X = vectorizer.transform([processed])
-    pred = model.predict(X)[0]
+    x = vectorizer.transform([processed])
+    pred = model.predict(x)[0]
     tag = encoder.inverse_transform([pred])[0]
     return tag
 
