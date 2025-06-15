@@ -6,3 +6,4 @@ numpy
 pyttsx3
 speechrecognition
 pyaudio
+openai
