@@ -1,10 +1,7 @@
+
 from flask import Flask, render_template, request, jsonify
-import openai
 
 app = Flask(__name__)
-
-openai.api_key =""
-
 
 @app.route('/')
 def home():
@@ -15,7 +12,6 @@ def chatbot_response():
     user_msg = request.json.get('msg').lower()
 
     # Simple intent matching
-
     for intent, keywords in intents.items():
         if any(keyword in user_msg for keyword in keywords):
             return jsonify({'response': responses[intent]})
@@ -35,7 +31,7 @@ responses = {
     'greeting': 'Hello! How can I help you today?',
     'goodbye': 'Goodbye! Have a nice day!',
     'thanks': "You're welcome!",
-     'age': "I'm a bot, I don't have an age.",
+    'age': "I'm a bot, I don't have an age.",
 }
 
 if __name__ == "__main__":
