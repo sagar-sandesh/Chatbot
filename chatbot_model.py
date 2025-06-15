@@ -31,7 +31,7 @@ def chatbot_response(text):
     response = get_response(tag)
     return response
 
-# Simple test
+
 if __name__ == "__main__":
     print("Chatbot is ready! Type something...")
     while True:

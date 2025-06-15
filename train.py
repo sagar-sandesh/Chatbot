@@ -41,4 +41,4 @@ model.fit(X, y)
 with open('model.pkl', 'wb') as f:
     pickle.dump((model, vectorizer, encoder, data),f)
 
-print("Model trained and saved as model.pkl")
+print("Model was trained and saved as model.pkl")

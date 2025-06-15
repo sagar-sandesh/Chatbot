@@ -154,7 +154,7 @@
       "what are the courses offered in your college?",
       "courses?",
       "courses offered",
-      "courses offered in (your univrsity(UNI) name)",
+      "courses offered in (your university(UNI) name)",
       "courses you offer",
       "branches?",
       "courses available at UNI?",
@@ -473,7 +473,7 @@
    "tag": "principal",
    "patterns": [
       "what is the name of principal",
-      "whatv is the principal name",
+      "what is the principal name",
       "principal name",
       "Who is college principal",
       "Where is principal's office",
@@ -578,7 +578,7 @@
       "maximum number of seats",
       "maximum students intake",
       "What is college intake",
-      "how many stundent are taken in each branch",
+      "how many student are taken in each branch",
       "seat allotment",
       "seats"
    ],
@@ -608,7 +608,7 @@
  {
    "tag": "committee",
    "patterns": [
-      "what are the different committe in college",
+      "what are the different committee in college",
       "different committee in college",
       "Are there any committee in college",
       "Give me committee details",
@@ -616,7 +616,7 @@
       "how many committee are there in college"
    ],
    "responses": [
-      "For the various committe in college contact this number: ADD NUMBER"
+      "For the various committee in college contact this number: ADD NUMBER"
    ],
    "context_set": ""
 },
@@ -668,7 +668,7 @@
       "how long will be the vacation"
    ],
    "responses": [
-      "Academic calender is given to you by your class-soordinators after you join your respective classes"
+      "Academic calender is given to you by your class-coordinators after you join your respective classes"
    ],
    "context_set": ""
 },
@@ -689,7 +689,7 @@
    "context_set": ""
 },
  {
-   "tag": "salutaion",
+   "tag": "salutation",
    "patterns": [
       "okk",
       "okie",
@@ -732,7 +732,7 @@
    "patterns": [
       "ragging",
       "is ragging practice active in college",
-      "does college have any antiragging facility",
+      "does college have any ragging facility",
       "is there any ragging cases",
       "is ragging done here",
       "ragging against",
