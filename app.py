@@ -25,6 +25,7 @@ intents = {
     'goodbye': ['bye', 'see you', 'goodbye', 'see ya'],
     'thanks': ['thanks', 'thank you', 'thx'],
     'age': ['how old are you', 'your age'],
+    'owner':['Who made you', 'Your owner'],
 }
 
 responses = {
@@ -32,6 +33,7 @@ responses = {
     'goodbye': 'Goodbye! Have a nice day!',
     'thanks': "You're welcome!",
     'age': "I'm a bot, I don't have an age.",
+    'owner': "Mr. Sagar Sandesh Oli",
 }
 
 if __name__ == "__main__":
