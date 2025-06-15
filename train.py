@@ -15,14 +15,14 @@ with open('intents.json') as f:
 
 lemmatizer = WordNetLemmatizer()
 
-corpus = []
+texts = []
 labels = []
 
 for intent in data['intents']:
     for pattern in intent['patterns']:
         tokens = word_tokenize(pattern)
         words = [lemmatizer.lemmatize(w.lower()) for w in tokens]
-        corpus.append(" ".join(words))
+        texts.append(" ".join(words))
         labels.append(intent['tag'])
 
 # Encode labels
@@ -31,7 +31,7 @@ y = encoder.fit_transform(labels)
 
 # Vectorize text
 vectorizer = CountVectorizer()
-X = vectorizer.fit_transform(corpus)
+X = vectorizer.fit_transform(texts)
 
 # Train model
 model = MultinomialNB()
