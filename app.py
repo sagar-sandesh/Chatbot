@@ -1,7 +1,11 @@
-
+import json
+import random
 from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
+
+with open("intents.json", "r") as f:
+    intents = json.load(f)
 
 @app.route('/')
 def home():
@@ -11,30 +15,14 @@ def home():
 def chatbot_response():
     user_msg = request.json.get('msg').lower()
 
-    # Simple intent matching
-    for intent, keywords in intents.items():
-        if any(keyword in user_msg for keyword in keywords):
-            return jsonify({'response': responses[intent]})
+    # Simple rule-based matching
+    for intent in intents['intents']:
+        for pattern in intent['patterns']:
+            if pattern.lower() in user_msg:
+                response = random.choice(intent['responses'])
+                return jsonify({'response': response})
 
-    # Default fallback response
     return jsonify({'response': "Sorry, I didn't understand that."})
-
-
-intents = {
-    'greeting': ['hello', 'hi', 'hey', 'good morning', 'good evening'],
-    'goodbye': ['bye', 'see you', 'goodbye', 'see ya'],
-    'thanks': ['thanks', 'thank you', 'thx'],
-    'age': ['how old are you', 'your age'],
-    'owner':['Who made you', 'Your owner'],
-}
-
-responses = {
-    'greeting': 'Hello! How can I help you today?',
-    'goodbye': 'Goodbye! Have a nice day!',
-    'thanks': "You're welcome!",
-    'age': "I'm a bot, I don't have an age.",
-    'owner': "Mr. Sagar Sandesh Oli",
-}
 
 if __name__ == "__main__":
     app.run(debug=True)
