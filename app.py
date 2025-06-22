@@ -15,7 +15,7 @@ def home():
 def chatbot_response():
     user_msg = request.json.get('msg').lower()
 
-    # Simple rule-based matching
+    #rule-based matching
     for intent in intents['intents']:
         for pattern in intent['patterns']:
             if pattern.lower() in user_msg:
