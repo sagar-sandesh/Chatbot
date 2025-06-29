@@ -52,7 +52,7 @@ pip install -r requirements.txt
 ----
 
 ## 4. Run the app
-pip install -r requirements.txt
+python app.py
 
 ----
 
@@ -89,3 +89,42 @@ meow-meow-chatbot/
 │   └── script.js         # JS for voice and chat interactions
 │
 └── requirements.txt      # Python dependencies
+
+----
+
+## 🎨 Customize Your Chatbot
+Edit intents.json to add new questions & answers
+
+Run the training script:
+
+bash
+Copy
+Edit
+python train.py
+Restart Flask app to apply changes
+
+---- 
+
+## 💡 Tips & Troubleshooting
+Mic issues? Check browser permissions and microphone hardware
+
+PyAudio installation problems? Use platform-specific instructions (Windows wheels or Linux packages)
+
+Voice not supported? Use modern Chrome/Edge browsers
+
+Model loading errors? Ensure model.pkl and data.pickle are in place
+
+----
+
+## 🔮 Future Plans
+Add GPT-4 integration for smarter replies
+
+Multi-language support for voice input/output
+
+User login & chat history saving
+
+Deploy to public cloud platforms
+
+Mobile app version
+
+----
