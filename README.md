@@ -53,10 +53,15 @@ pip install -r requirements.txt
 ## 5. Open your browser at http://127.0.0.1:5000
 
 ###⚙️ How to Use
+
 .Click the 🎤 mic button to start speaking
+
 .Or type your message in the input box and press Send or Enter
+
 .Chatbot replies appear in green, your messages in blue
+
 .Responses are spoken aloud automatically
+
 .Scroll chat history to follow the conversation
 
 ## 🧩 Project Structure
