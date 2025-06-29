@@ -71,24 +71,18 @@ python app.py
 ----
 
 ## 🧩 Project Structure
-
-meow-meow-chatbot/
-│
-├── app.py                # Flask server & API endpoints
-├── chatbot_model.py      # ML model loading & inference
-├── train.py              # Model training script
-├── model.pkl             # Trained ML model file
-├── data.pickle           # Data for model vocabulary & classes
-├── intents.json          # Intents & responses config
-│
-├── templates/
-│   └── index.html        # Chat UI page
-│
-├── static/
-│   ├── style.css         # Chat UI styles
-│   └── script.js         # JS for voice and chat interactions
-│
-└── requirements.txt      # Python dependencies
+- ├── app.py                # Flask server & API endpoints
+- ├── chatbot_model.py      # ML model loading & inference
+- ├── train.py              # Model training script
+- ├── model.pkl             # Trained ML model file
+- ├── data.pickle           # Data for model vocabulary & classes
+- ├── intents.json          # Intents & responses config
+- ├── templates/
+- │   └── index.html        # Chat UI page
+- ├── static/
+- │   ├── style.css         # Chat UI styles
+- │   └── script.js         # JS for voice and chat interactions
+- └── requirements.txt      # Python dependencies
 
 ----
 
