@@ -36,11 +36,11 @@ A voice-enabled chatbot powered by Flask, machine learning, and Web Speech APIs.
 
 ----
 ## 2. Create a virtual environment & activate it
-##. Window: 
+**Window:** 
 python -m venv venv
 venv\Scripts\activate
 
-##macOS/Linux:
+**macOS/Linux:**
 python3 -m venv venv
 source venv/bin/activate
 
