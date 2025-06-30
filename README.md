@@ -122,3 +122,7 @@ Deploy to public cloud platforms
 Mobile app version
 
 ----
+## 📄 License
+MIT License © 2025 sagar sandesh oli
+
+----
