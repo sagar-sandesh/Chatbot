@@ -30,33 +30,39 @@ A voice-enabled chatbot powered by Flask, machine learning, and Web Speech APIs.
 ## 📦 Installation Guide
 
 1. **Clone the repository**  
-   ```bash
-   git clone https://github.com/yourusername/meow-meow-chatbot.git
-   cd meow-meow-chatbot
-
-----
-## 2. Create a virtual environment & activate it
-**Window:** 
+```bash
+ git clone https://github.com/yourusername/meow-meow-chatbot.git
+cd meow-meow-chatbot
+```    
+ 2. **Create a virtual environment & activate it**
+```bash
+**Window:**
 python -m venv venv
 venv\Scripts\activate
 
 **macOS/Linux:**
+
 python3 -m venv venv
 source venv/bin/activate
+```
 
 ----
 
-## 3. Install dependencies
+ 3. **Install dependencies**
+```bash
 pip install -r requirements.txt
+```
 
 ----
 
-## 4. Run the app
+ 4.  **Run the app**
+```bash
 python app.py
+```
 
 ----
 
-## 5. Open your browser at http://127.0.0.1:5000
+ 5. **Open your browser at http://127.0.0.1:5000**
 
 ---- 
 
