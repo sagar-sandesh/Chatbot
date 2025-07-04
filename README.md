@@ -132,3 +132,11 @@ Mobile app version
 MIT License © 2025 sagar sandesh oli
 
 ----
+## 👤 Author
+Mr. Sagar Sandesh Oli
+
+📧 olisagarsandesh@gmail.com
+
+📍 Based in Finland 🇫🇮 | Originally from Nepal 🇳🇵
+
+----
