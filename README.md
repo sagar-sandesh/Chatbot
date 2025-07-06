@@ -35,13 +35,15 @@ A voice-enabled chatbot powered by Flask, machine learning, and Web Speech APIs.
 cd meow-meow-chatbot
 ```    
  2. **Create a virtual environment & activate it**
-```bash
+
 **Window:**
+```bash
 python -m venv venv
 venv\Scripts\activate
+```
 
 **macOS/Linux:**
-
+```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
@@ -94,12 +96,7 @@ python app.py
 
 ## 🎨 Customize Your Chatbot
 Edit intents.json to add new questions & answers
-
 Run the training script:
-
-bash
-Copy
-Edit
 python train.py
 Restart Flask app to apply changes
 
@@ -117,15 +114,11 @@ Model loading errors? Ensure model.pkl and data.pickle are in place
 ----
 
 ## 🔮 Future Plans
-Add GPT-4 integration for smarter replies
-
-Multi-language support for voice input/output
-
-User login & chat history saving
-
-Deploy to public cloud platforms
-
-Mobile app version
+- Add GPT-4 integration for smarter replies
+- Multi-language support for voice input/output
+- User login & chat history saving
+- Deploy to public cloud platforms
+- Mobile app version
 
 ----
 ## 📄 License
