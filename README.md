@@ -103,19 +103,19 @@ Restart Flask app to apply changes
 ---- 
 
 ## 💡 Tips & Troubleshooting
-1. Mic issues?
+**1. Mic issues?**
      
     Check browser permissions and microphone hardware
 
-2. PyAudio installation problems?
+**2. PyAudio installation problems?**
      
     Use platform-specific instructions (Windows wheels or Linux packages)
 
-3. Voice not supported?
+**3. Voice not supported?**
      
     Use modern Chrome/Edge browsers
 
-4. Model loading errors?
+**4. Model loading errors?**
      
     Ensure model.pkl and data.pickle are in place
 
