@@ -95,9 +95,9 @@ python app.py
 ----
 
 ## 🎨 Customize Your Chatbot
-Edit intents.json to add new questions & answers
-Run the training script:
-python train.py
+To Customize this project Edit intents.json to add new questions & answers.
+Then run the training script:
+   python train.py
 Restart Flask app to apply changes
 
 ---- 
